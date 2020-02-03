@@ -1,4 +1,4 @@
-console.log('iniciando com node')
+console.log('starting nodejs application')
 
 function createUser() {
     //resolve === sucess
@@ -19,13 +19,29 @@ function createUser() {
     });     
 }
 
-const userPromise = createUser();
-//to manipulate errors: .catch
-//to manipulate success: .then
-userPromise
-    .then((success) => {
-        console.log('userPromise =>',success);
-    })
-    .catch((error) => {
-        console.error('error =>', error);
-    });
+//------------------------pt 1-------------------------
+// const userPromise = createUser();
+// //to manipulate errors: .catch
+// //to manipulate success: .then
+// userPromise
+//     .then((success) => {
+//         console.log('userPromise =>',success);
+//     })
+//     .catch((error) => {
+//         console.error('error =>', error);
+//     });
+//-----------------------------------------------------
+
+//------------------------pt 2-------------------------
+// main()
+// async function main(){
+//     try {
+//         console.time('tempo-promise');
+//         const usuario = await createUser();
+//         console.log(usuario);
+//         console.timeEnd('tempo-promise');
+//     } catch (error) {
+//         console.error(error);
+//     }
+// }
+//----------------------------------------------------
