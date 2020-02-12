@@ -15,8 +15,7 @@ class Database {
         //another method to get data in json:
         //const file = require('./heroes.json');
         const file = await readFileAsync(this.FILE_NAME, 'utf8');
-        const newFile = JSON.parse(file.toString());
-        return newFile;
+        return JSON.parse(file.toString());
     }
 
     writeFile(){
@@ -24,8 +23,8 @@ class Database {
     }
 
     async list(id){
-        const data = await this.getData()
-        const filterData = data.filter(item => {id ? (item.id === id) : true});
+        const data = await this.getData();
+        const filterData = data.filter(item => (id ? (item.id === id) : true));
         return filterData;
     }
 

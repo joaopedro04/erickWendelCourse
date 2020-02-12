@@ -7,7 +7,7 @@ const DEFAULT_ITEM_REGISTER = {
     id: 1,
     nome: 'Flash',
     poder: 'Super speed'
-}
+};
 
 const database = require('./database');
 
