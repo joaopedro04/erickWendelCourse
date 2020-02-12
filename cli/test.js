@@ -24,4 +24,10 @@ describe('switch de manipulação de herois', () => {
         const [current] = await database.list(DEFAULT_ITEM_REGISTER.id);
         deepEqual(current, expected);
     });
+
+    it('3 - deve remover um heroi por id', async () => {
+        const expected = true;
+        const result = await  database.delete(DEFAULT_ITEM_REGISTER.id);
+        deepEqual(result, expected);
+    });
 });
