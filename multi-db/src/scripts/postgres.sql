@@ -5,4 +5,9 @@ CREATE TABLE TB_HEROES (
     PODER TEXT NOT NULL
 );
 INSERT INTO TB_HEROES (NOME,PODER)
-    VALUES ('The Flash','Super Speed');
+VALUES
+    ('The Flash','Super Speed'),
+    ('Batman','Many Money'),
+    ('Superman','Super Force'),
+    ('Aquaman','King of ocean'),
+    ('Robin','Martial Arts');

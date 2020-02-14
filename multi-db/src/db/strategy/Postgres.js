@@ -4,6 +4,8 @@ class Postgres extends ICrud {
         super();
     }
 
+    
+
     create(item) {
         console.log('Postgres: create => success!!!');
     }
